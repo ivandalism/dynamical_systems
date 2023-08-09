@@ -1,0 +1,23 @@
+ We are studying the dynamics given by the following differential equation: Overscript[x, ..] = -\[Omega]^2x+h cos(\[CapitalOmega]t)  for \[CapitalOmega]>0 and h>=0 with \[CapitalOmega]!=\[Omega]
+ up to rescaling the times we can only consider
+             						Overscript[x, ..] = -\[Alpha]^2x+K cos(t)  for 0<\[Alpha]!=1 and K>0 
+  The solution of this linear non homogeneous equation is given by the sum of the general integral Acos(\[Alpha]t)+Bsin(\[Alpha]t) and a particular solution Ccos(t).
+  Being a particular solution yields C=K/(\[Alpha]^2-1) and the initial solutions Subscript[x, 0], Subscript[v, 0] yield A = Subscript[x, 0]-C = Subscript[x, 0]-K/(\[Alpha]^2-1) and B = Subscript[v, 0]/\[Alpha].
+  Hence the flow is given by Subscript[\[Phi], t,0](Subscript[x, 0],Subscript[v, 0])=(Subscript[x, 0]cos(\[Alpha]t)+Subscript[v, 0]/\[Alpha] sin(\[Alpha]t)	+C(cos(t)-cos(\[Alpha]t))
+-Subscript[\[Alpha]x, 0]sin(\[Alpha]t)+Subscript[v, 0]cos(\[Alpha]t)	+C(-sin(t)+\[Alpha]sin(\[Alpha]t))
+
+).
+  So the Period Shift Map (after a change of coordinatesSubscript[u, 0]= Subscript[v, 0]/\[Alpha]) is 
+  Subscript[\[Phi], 2\[Pi],0](Subscript[x, 0],Subscript[u, 0]) = Subscript[R, 2\[Pi]\[Alpha] ](Subscript[x, 0]
+Subscript[u, 0]
+
+) + C (1-cos(2\[Pi]\[Alpha])
+sin(2\[Pi]\[Alpha])
+
+) so by calling s^*:=(C
+0
+
+) the dynamics on the Section is \[Psi](s)=Subscript[R, 2\[Pi]\[Alpha] ](s-s^*)+s^* with s^* fixed point.
+  So 	 \[Alpha]\[Element]\[DoubleStruckCapitalZ]		 implies that every s is a fixed point
+  	 \[Alpha]\[Element]\[DoubleStruckCapitalQ]-\[DoubleStruckCapitalZ] 	 implies all orbits are periodic of the same period (except for s^* fixed)
+  and  \[Alpha]\[NotElement]\[DoubleStruckCapitalQ] 	 implies all orbits are dense subsets of circles.
